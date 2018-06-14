@@ -1,0 +1,4 @@
+#ignore all log and temp files
+*.log
+*.aux
+*.out
