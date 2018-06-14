@@ -1,4 +1,4 @@
-# Modified Single-Column Deedy Resume LaTeX Template 
+# Single-Column Deedy Resume LaTeX Template
 Original Repository (2 Columns) : [Deedy Resume Latex Template v1.1](https://github.com/deedydas/Deedy-Resume)
 
 ## Dependencies
