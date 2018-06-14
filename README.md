@@ -1,7 +1,7 @@
 # Modified Single Column Deedy Resume
 Original Repository (2 Columns) : [Deedy Resume Latex Template v1.1](https://github.com/deedydas/Deedy-Resume)
 
-### Dependencies
+## Dependencies
 
 Template must be compiled with [XeLatex](http://www.texts.io/support/0002/). This usually comes pre-installed with most TeX distributions.
 
