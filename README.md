@@ -14,6 +14,7 @@ However, if you get compilation errors saying a font is missing, find the line o
 $ git clone https://github.com/babrar/resume.git
 $ cd resume
 $ make
-$ make clean # remove auto-generated files
+$ make clean # remove auto-generated files in Unix 
+$ make cleanWin # make clean for Windows machines
 ```
 XeLatex compiles to `.pdf` by default, so no further arguments are needed.
