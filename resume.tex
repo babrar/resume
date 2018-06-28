@@ -1,151 +1,131 @@
-% Changes to be made 
-% Include Additional Skills in skills section
-% Include other skills in First section
-% Include agile for work 
-% Make the projects bullet pointed (add more lines)
-% Make relevant courses contiuous line
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This is a modified ONE COLUMN version of
-% the following template:
-% 
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.1 (30/4/2014)
-%
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+% !TeX spellcheck = en
+\documentclass{resume} % Use the custom resume.cls style
 
-\documentclass[]{deedy-resume-openfont}
+\usepackage[left=0.75in,top=0.52in,right=0.75in,bottom=0.52in]{geometry} % Document margins
 
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
+\usepackage{marvosym}
+\usepackage{graphicx}
+
+\name{Banin Abrar}
+\address{\href{https://babrar.github.io/}{babrar.github.io} \\
+         \href{mailto:babrar@ede.uwaterloo.ca}{babrar@uwaterloo.ca}\ \\
+         \href{https://www.linkedin.com/in/baninabrar}{in/baninabrar} \\
+         \href{https://github.com/babrar}{github.com/babrar}}
 
 \begin{document}
 
+%----------------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%----------------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     TITLE NAME
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{rSection}{Summary}
+  \vspace{0.5em}
+  \begin{list}{$\cdot$}{\leftmargin=1.0em}
+    \itemsep -0.5em \vspace{-0.5em}
+    \item Experienced with C, C++, Perl, Python, JavaScript; Git, SVN with basic knowledge of AWS
+    %\item Go, C\texttt{++}, C, Java, Python, Rust, Haskell, Ruby; NumPy, SciPy,
+     % Pandas, TensorFlow, Keras
+	\item Interested in backend development, algorithm optimization, systems design
+  \end{list}
+  \vspace{0.5em}
+\end{rSection}
 
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
-\namesection{Banin}{Abrar}{ \urlstyle{same}\url{babrar.github.io} \\
-\href{mailto:babrar@edu.uwaterloo.ca}{babrar@edu.uwaterloo.ca} |  519-729-6017 
-}
-\section{Summary}
-\runsubsection{Strengths}
-\descript{}
-%\location{Expected June 2014 – Sep 2014 | Mountain View, CA}
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\sectionsep
-\begin{tightemize}
-\item Proficient in C, C++, JavaScript, Python, Perl, LaTeX, HTML, CSS, Bash.
-\item Experienced with Git, SVN, RHEL, SIMD and basic familiarity with AWS (EC2 and S3). 
-%\item Exposure to Digital Design through Verilog and VHDL.
-\end{tightemize}
-\sectionsep
+\begin{rSection}{Experience}
+  \begin{rWorkSection}{Integrated Device Technology}
+                     {Waterloo, ON}
+                     {Algorithm Engineer (Performance)}
+                     {Jan -- Apr '18}
+    \item Improved H.265 encoder's load distribution across multiple CPU cores.
+    \item Increased pixel metadata retrieval rate by 4 times over default 
+	  auto-vectorization in GCC
+    \item Optimized pipeline designs in FPGA using Verilog. Reduced total
+	  negative slack by 30\%
+	  \item Analyzed potential benefits of using 512-bit instruction sets in 
+	  IDT's x86 mainframe
+    \item Wrote automation scripts to improve SSH compatibility in the
+	  company's internal workflow
+	  \item Completed tasks and projects using Agile Development, through SCM 
+    tools, i.e. JIRA.
+  \end{rWorkSection}
+\end{rSection}
 
-\runsubsection{Interests}
-\sectionsep
-\begin{tightemize}
-\item Backend Development, Algorithm Optimization.
-\end{tightemize}
-\sectionsep
-\section{Experience}
-\runsubsection{Integrated Device Technology (IDT)}
-\descript{| Algorithm Engineer \\ \color{gray}{Jan 2018 – Apr 2018 | Waterloo, ON} }
-%\location{Jan 2018 – Apr 2018 | Waterloo, ON}
-\begin{tightemize}
-\item Improved H.265 encoder's load distribution across CPU cores by implementing Intrinsics on C-code.
-\item Increased pixel metadata collection speed by a factor of 4, over GCC’s default auto-vectorization.
-\item Analyzed potential beneﬁts of using 512-bit instruction sets in IDT’s x86 mainframe.
-\item Optimized pipeline designs in FPGA using Verilog. Reduced total negative slack by 30 percent.
-\item Wrote automation scripts to improve SSH compatibility in the internal workﬂow of the company.
-\item Completed tasks and projects using Agile Development, through SCM tools, i.e. JIRA.
-\end{tightemize}
-\sectionsep
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Projects
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
 
-\section{Projects}
+\begin{rSection}{Projects}
 
-\runsubsection{F-Search}
-\descript{| Python \\ \color{gray}{Current Project} }
-%\location{Upcoming Project}
-\begin{tightemize}
-\item F-Search is a speed-efﬁcient extended fuzzy search algorithm.
-\item Generating Trie to map words with frequency of use. Inspired by \href{http://norvig.com/mayzner.html}{\underline{Peter Norvig's Research Post}}.
-\item Improving suggestion accuracy through the use of sequence transposition algorithm.
-%\item Use of Damerau–Levenshtein distance over general LD algorithm to allow for consideration of sequence transpositions.
-\end{tightemize}
-\sectionsep
+  \begin{rProjectSection}{Smart-Cane}
+                         {{\href{https://git.io/f4d9G}{git.io/f4d9G}}}
+  \item Team lead in \textbf{embedded systems} project, for designing a smart 
+  walking-aid
+  \item Implemented an automated, proximity-based warning system using
+  Ultrasonic signal probing
+  \item Generated cross-compiled MIPS instructions for Omega2 chip, 
+  through GNU Toolchain
+  \end{rProjectSection}
 
-\runsubsection{Smart-Cane}
-\descript{| C++ \\ \color{gray}{Oct 2017}}
-%\location{Oct 2017}
-\begin{tightemize}
-\item Smart-Cane is a walking stick designed for the visually-impaired. 
-\item Simulated a proximity sensor by utilizing data collected from a short-range ultrasonic sensor. 
-\item Automated data collection and implemented an alarm system to warn the user of the cane \\ in case of close proximity to obstacles.
-\item Generated MIPS compatible instructions through cross-compilation of C++.
-\end{tightemize}
-\sectionsep
+  \begin{rProjectSection}{Gitook}
+                         {{\href{https://git.io/f4d9Y}{git.io/f4d9Y}}}
+  \item Designed a git-repository commit handler interface in Perl
+  \item Utilized {\href{https://git-template.readthedocs.io/en/latest/}{\textbf{Git Templating}}} to detect and filter undesired
+  changes during commit.
+  \item Automated background checks on local repository through 
+  git pre-commit hooks
+  \end{rProjectSection}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     education
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Education}
-\runsubsection{University of Waterloo}
-\descript{| Candidate for B.A.Sc in Honours Computer Engineering \\ \color{gray}{Expected Apr 2022 | Waterloo, ON}}
-%\location{Expected Apr 2022 | Waterloo, ON}
-\begin{tightemize}
-\item President’s Scholarship of Distinction (2017)
-\end{tightemize}
-\sectionsep
+  \begin{rProjectSection}{UltraInstinct}
+                         {{\href{https://git.io/f4dhQ}{git.io/f4dhQ}}}
+  \item Designed an API-based Twitter user analysis program in Flask.
+  \item Implemented automated text mining through Twitter's tweet 
+  extraction API
+  \item Utilized IBM's Natural Language Processing API to perform tweet sentiment analysis
+  \item Developed algorithm to generate an overall score for a user from
+  individual sentiment scores
 
-\descript{\color{gray}{Relevant Coursework}}
-\sectionsep
-\textbullet{} Fundamentals of Programming (ECE 150) \textbullet{}   Discrete Mathematics and Logic 1 (ECE 108) \\
-\textbullet{} Digital Circuits and Systems (ECE 124) \textbullet{} edX Computer Science (CS50) \\ \textbullet{} Programming in C++ (New Horizons)
-\sectionsep
+  \end{rProjectSection}
 
+  \begin{rProjectSection}{FSearch}
+                         {In-Progress}
+  \item Created a speed-efficient extended fuzzy search program.
+	\item Implemented \href{http://norvig.com/mayzner.html}{\underline{Peter Norvig's Research}} to efficiently triangulate possible corrections.
+	\item Notably improved suggestion accuracy by implementing sequence 
+  transposition algorithm
+  \end{rProjectSection}
 
-\end{document}  \documentclass[]{article}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+  {\bf University of Waterloo} \hfill {Sept '17 -- Apr '22 \em (expected)} \\
+  {\em Honours Bachelor of Applied Science in Computer Engineering} %\hfill {GPA 3.7}  
+  \begin{list}{$\cdot$}{\leftmargin=1.0em}
+  \item President's Scholarship of Distinction (2017)
+  \end{list}
+
+  \begin{rProjectSection}{Relevant Coursework}{}
+  \item Fundamentals of Programming (ECE 150), Discrete Mathematics and Logic 1 (ECE 108), Digital Circuits and Systems (ECE 124), Object-Oriented Programming in C++ (New Horizons)
+  \end{rProjectSection}
+
+\end{rSection}
+
+\begin{rSection}{Activities}
+\vspace{0.5em}
+\begin{list}{$\cdot$}{\leftmargin=1.0em}
+\item UW Rubik's Cube Club, McHacks V (2018), StarterHacks (2018)
+\end{list}
+
+\end{rSection}
+
+\end{document}

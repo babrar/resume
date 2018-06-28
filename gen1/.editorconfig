@@ -1,6 +1,9 @@
 #Style unification across IDEs
 
 root = true
+[Makefile]
+indent_style = tab
+indent_size = 4
 
 [*.tex]
 indent_style = space

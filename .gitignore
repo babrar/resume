@@ -1,4 +1,4 @@
-#ignore all log and temp files
+*.pdf
 *.log
-*.aux
 *.out
+*.aux

@@ -1,12 +1,8 @@
-all:
-	xelatex resume.tex
+all :
+	pdflatex resume.tex
 
-clean:
-	rm -f *.log
-	rm -f *.aux
-	rm -f *.out
+clean :
+	rm *.log
 
-cleanWin:
+cleanwin :
 	del *.log
-	del *.aux
-	del *.out
