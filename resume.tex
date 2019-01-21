@@ -11,8 +11,8 @@
 \usepackage{graphicx}
 
 \name{Banin Abrar}
-\address{\href{https://babrar.github.io/}{babrar.github.io} \\
-         \href{mailto:babrar@ede.uwaterloo.ca}{babrar@uwaterloo.ca}\ \\
+\address{
+         \href{mailto:babrar@edu.uwaterloo.ca}{babrar@uwaterloo.ca}\ \\
          \href{https://www.linkedin.com/in/baninabrar}{in/baninabrar} \\
          \href{https://github.com/babrar}{github.com/babrar}}
 
@@ -26,12 +26,12 @@
   \vspace{0.5em}
   \begin{list}{$\cdot$}{\leftmargin=1.0em}
     \itemsep -0.5em \vspace{-0.5em}
-    \item Experienced with C, C++, Python, Perl, JavaScript; Git, SVN and working knowledge of AWS
+    \item Python, NodeJS, C++, SQL, React, Perl; AWS, Heroku, Nginx, MongoDB, PostgreSQL
     %\item Go, C\texttt{++}, C, Java, Python, Rust, Haskell, Ruby; NumPy, SciPy,
      % Pandas, TensorFlow, Keras
-	\item Interested in backend development, algorithm optimization, systems design
+	\item Experience with systems design, application deployment, backend development, optimization
   \end{list}
-  \vspace{0.5em}
+  \vspace{0.25em}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -39,21 +39,26 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
-  \begin{rWorkSection}{Integrated Device Technology}
+  \begin{rWorkSection}{JANA Solutions}
+                     {Aurora, ON}
+                     {Software Development Intern (Model/Infrastructure)}
+                     {Sep -- Dec '18}
+    \item Led software implementation of JANA's probabilistic model for distributed gas transmission lines
+    \item Redesigned asset storage and hashing in PostgreSQL to improve system throughput by 90.32\%    
+    \item Deployed Dash integrated Flask application to internal servers using Apache as reverse-proxy
+    \item Authored an internal knowledge base scraper to extract relevant data from user-defined queries
+    \item Built custom git development environment tools and automated update integration into web app
+  \end{rWorkSection}
+  \begin{rWorkSection}{Integrated Device Technology (IDT)}
                      {Waterloo, ON}
-                     {Algorithm Engineer (Performance)}
+                     {Software Engineering Intern (Performance)}
                      {Jan -- Apr '18}
-    \item Improved H.265 encoder's load distribution across multiple CPU cores
-    \item Increased pixel metadata retrieval rate by 400\% over GCC's default
-    auto-vectorization
-    \item Optimized pipeline designs in FPGA using Verilog. Reduced total
+    \item Improved proprietary H.265 compression's load distribution across multiple compute cores
+    \item Increased pixel metadata retrieval rate by 75.81\% over open-source implementation in x265
+    \item Optimized pipeline designs in H.264's FPGA using Verilog. Reduced total
 	  negative slack by 30\%
-	  \item Analyzed potential benefits of using 512-bit instruction sets in 
-	  IDT's x86 mainframe
-    \item Wrote automation scripts to improve SSH compatibility in the
-	  company's internal workflow
-	  \item Completed tasks and projects using Agile Development, through SCM 
-    tools, i.e. JIRA
+    \item Wrote client-side scripts to improve SSH compatibility in the
+	  company's internal git workflow
   \end{rWorkSection}
 \end{rSection}
 
@@ -62,60 +67,52 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Projects}
-
-  \begin{rProjectSection}{Smart-Cane}
-                         {{\href{https://git.io/f4d9G}{git.io/f4d9G}}}
-  \item Team lead in \textbf{embedded systems} project, for designing a smart 
-  walking-aid
-  \item Implemented an automated, proximity-based warning system using
-  ultrasonic signal probing
-  \item Generated cross-compiled MIPS instructions for Omega2 chip, 
-  through GNU Toolchain
+  \vspace{0.25em}
+  \begin{rProjectSection}{YelpCamp}
+                         {{\href{https://git.io/fhG5W}{git.io/fhG5W}}}
+  \item Building a Heroku-hosted Node.js application to serve an interactive collection of campsites
+  \item Utilized Passport.js to implement authentication and MongoDB to achieve lightweight storage
   \end{rProjectSection}
-
-  \begin{rProjectSection}{Gitook}
-                         {{\href{https://git.io/f4d9Y}{git.io/f4d9Y}}}
-  \item Designed a git-repository commit handler interface in Perl
-  \item Utilized {\href{https://git-template.readthedocs.io/en/latest/}{\textbf{Git Templating}}} to detect and filter undesired
-  changes during commit
-  \item Automated background checks on local repository through 
-  git pre-commit hooks
-  \end{rProjectSection}
-
+  \vspace{-0.25em}
   \begin{rProjectSection}{UltraInstinct}
                          {{\href{https://git.io/f4dhQ}{git.io/f4dhQ}}}
-  \item Designed an API-based Twitter user analysis program in Flask
-  \item Implemented automated text mining through Twitter's tweet 
-  extraction API
-  \item Utilized IBM's Natural Language Processing API to perform tweet sentiment analysis
-  \item Developed algorithm to generate an overall score for a user from
-  individual sentiment scores
-
+  \item Designed a Twitter-API based Flask application that analyzes users based on their twitter activity
+  \item Utilized IBM Watson's natural language processing API, to perform tweet sentiment analysis
+  %\item Developed algorithm to generate an overall score for a user from
+  %individual sentiment scores
   \end{rProjectSection}
-
-  \begin{rProjectSection}{FSearch}
-                         {In-Progress}
-  \item Created a speed-efficient extended fuzzy search program using Python
-	\item Implemented \href{http://norvig.com/mayzner.html}{\underline{Peter Norvig's Research}} to efficiently triangulate possible corrections.
-	\item Notably improved suggestion accuracy by implementing sequence 
-  transposition algorithm
+  \vspace{-0.25em}
+  \begin{rProjectSection}{Smart-Cane}
+                         {{\href{https://git.io/f4d9G}{git.io/f4d9G}}}
+  \item Led an embedded systems project, for designing a smart 
+  walking-aid for the vision-impaired
+  \item Implemented an automated, proximity-based warning system through
+  ultrasonic signal probing
+  \item Generated cross-compiled MIPS instructions for Onion's Omega2 chip, 
+  using GNU Toolchain
   \end{rProjectSection}
+  \vspace{-0.25em}
+  \begin{rProjectSection}{MinBlog}
+                         {{\href{https://git.io/fhsJI}{git.io/fhsJI}}}
+  \item Constructed a blogging site using RESTful routing on Node.js backend and MongoDB storage
+  \item Designed intuitive user interfaces with Semantic UI and responsive components using JQuery  \end{rProjectSection}
 
 \end{rSection}
-
+\vspace{0.25em}
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
   {\bf University of Waterloo} \hfill {Sept '17 -- Apr '22 \em (expected)} \\
-  {\em Honours Bachelor of Applied Science in Computer Engineering} %\hfill {GPA 3.7}  
+  {\em Candidate for Honours Bachelor of Applied Science in Computer Engineering} %\hfill {GPA 3.7}  
   \begin{list}{$\cdot$}{\leftmargin=1.0em}
   \item President's Scholarship of Distinction (2017)
   \end{list}
 
   \begin{rProjectSection}{Relevant Coursework}{}
-  \item Fundamentals of Programming (ECE 150), Discrete Mathematics and Logic 1 (ECE 108), Digital Circuits and Systems (ECE 124), Object-Oriented Programming in C++ (New Horizons)
+  \item Algorithms and Data Structures, Full Stack Web Development in Node.js, Digital Computers,
+  React Native Application Development, Fundamentals of Programming, Discrete Math and Logic
   \end{rProjectSection}
 
 \end{rSection}
@@ -123,7 +120,7 @@
 \begin{rSection}{Activities}
 \vspace{0.5em}
 \begin{list}{$\cdot$}{\leftmargin=1.0em}
-\item UW Rubik's Cube Club, McHacks V (2018), StarterHacks (2018)
+\item UWMCC Web Developer, UW Rubik's Cube Club, McHacks(2018), StarterHacks (2018)
 \end{list}
 
 \end{rSection}
